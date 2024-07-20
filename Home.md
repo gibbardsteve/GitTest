@@ -8,4 +8,6 @@ A collection of useful notes that I have dotted arounds of scraps of paper, tran
 
 ## Git
 
-- [Git Notes](git-notes.md)
+- [Git Notes](https://github.com/gibbardsteve/git-notes/wiki/git-notes)
+- [Git Setup](https://github.com/gibbardsteve/git-notes/wiki/git-setup)
+- [Git Workflow](https://github.com/gibbardsteve/git-notes/wiki/git-workflow)
