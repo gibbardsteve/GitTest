@@ -108,18 +108,41 @@ Prior to commiting check:
 
 2. All of the changes you want to commit are staged:
 
-```bash
-git status
+    ```bash
+    git status
 
-On branch my-new-branch
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-    deleted:    Basic-Workflow.md
-    deleted:    Git-Notes.md
-    modified:   Home.md
-    new file:   git/git-notes.md
-    renamed:    Git-Setup.md -> git/git-setup.md
-    new file:   git/git-workflow.md
+    On branch my-new-branch
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+        deleted:    Basic-Workflow.md
+        deleted:    Git-Notes.md
+        modified:   Home.md
+        new file:   git/git-notes.md
+        renamed:    Git-Setup.md -> git/git-setup.md
+        new file:   git/git-workflow.md
+    ```
+
+3. Commit the changes locally:
+
+    ```bash
+    git commit -m "your commit message" .
+    ```
+
+4. Push the changes to the remote repository:
+
+    ```bash
+    git push origin my-new-branch
+    ```
+
+5. Check commit history:
+
+```bash
+git log
+
+commit d029706bcd1f01aa1a18beb89c0208f764c03294 (HEAD -> my-new-branch, origin/my-new-branch)
+Author: Author Name <author.name@org.com>
+Date:   Sat Jul 20 19:55:59 2024 +0100
+
+    docs: restructure notes and add home content
 
 ```
-
