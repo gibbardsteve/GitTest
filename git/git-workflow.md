@@ -79,9 +79,9 @@ Untracked files:
 
 ```
 
-### Stage Files for Commit
+### Stage Changes for Commit
 
-To stage all files locally ready for commit:
+To stage all changes locally ready for commit:
 
 ```bash
 git add .
@@ -92,3 +92,34 @@ To stage a single file ready for commit:
 ```bash
 git add <filename>
 ```
+
+### Commit Changes
+
+Prior to commiting check:
+
+1. You are on the right branch:
+
+    ```bash
+    git branch
+
+    main
+    * my-new-branch
+    ```
+
+2. All of the changes you want to commit are staged:
+
+```bash
+git status
+
+On branch my-new-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+    deleted:    Basic-Workflow.md
+    deleted:    Git-Notes.md
+    modified:   Home.md
+    new file:   git/git-notes.md
+    renamed:    Git-Setup.md -> git/git-setup.md
+    new file:   git/git-workflow.md
+
+```
+
